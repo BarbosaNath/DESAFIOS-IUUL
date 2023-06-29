@@ -1,9 +1,32 @@
-#navbar {
+/* #navbar {
     position: fixed;
     top: 0;
     width: 100%;
-}
+} */
 
 .margin-navbar {
     padding-top: 7vh;
+}
+
+
+#main-screen {
+	position: relative;
+	height: 100%;
+	overflow: auto;
+}
+
+
+body {
+	background: repeating-linear-gradient(-45deg, #fafafa, #fafafa 5%, #fff 5%, #fff 10%);
+	background-size: 1000px 1000px;
+	animation: gradient 20s linear infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: initial;
+	}
+	100% {
+		background-position: 1000px 0px;
+	}
 }

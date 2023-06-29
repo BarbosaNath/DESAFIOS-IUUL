@@ -15,21 +15,60 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
       $(function () {
-        $("#navbar").load("navbar.html");
+        $("#navbar-loader").load("navbar.html");
       });
     </script>
-    <div id="navbar" class="z-3"></div>
+    <div id="navbar-loader" class="z-3"></div> -->
     <!--/ NAVBAR -->
+
+    <nav id="navbar" class="navbar sticky-top navbar-expand-lg bg-body-tertiary z-3">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="/">Matheus Barbosa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"/>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#aboutme">Sobre mim</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#portifolio">Portifólio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#formacao">Formação</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#atuacao">Atuação Profissional</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
 
 
 
     <!-- HOME PAGE -->
-    <div class="d-flex px-3 flex-column border border-info""> <!-- main contend -->
+    <!-- <div id="main-screen" class="d-flex px-3 flex-column border border-info""> main contend -->
+    <div id="main-screen" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example p-3 rounded-2" tabindex="0">
 
       <!--/ SOBRE MIM -->
-      <div id="aboutme" class="container-lg px-4 text-center border border-danger margin-navbar">
+      <div id="aboutme" class="container-lg px-4 text-center border border-danger ">
 
 
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
@@ -41,15 +80,15 @@
 
           <div class="col container border border-warning">
             <div class="row">
-              <div class="col text text-center">
-                <h1>MATHEUS EDUARDO</h1>
-                <h1>BARBOSA DE SOUSA</h1>
+              <div class="col text-start">
+                <h1 class="fw-bold">MATHEUS EDUARDO</h1>
+                <h1 class="fw-bold">BARBOSA DE SOUSA</h1>
               </div>
             </div>
 
             <div class="row">
               <div class="col text-center">
-                <p>
+                <p style="text-align: justify; text-justify: inter-word;">
                   Ola, tenho 20 anos e estou cursando
                   <strong>Sistemas de Informação</strong>. Sou autodidata e
                   aprendo rápido. Possuo conhecimento intermediário em
@@ -105,7 +144,7 @@
 
 
       <!-- PORTIFÓLIO -->
-      <div id="portifolio" class="container-lg px-4 text-center border border-danger margin-navbar">
+      <div id="portifolio" class="container-lg px-4 text-center border border-danger ">
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
         </div>
       </div>
@@ -114,7 +153,7 @@
 
 
       <!-- FORMACAO -->
-      <div id="formacao" class="container-lg px-4 text-center border border-danger margin-navbar">
+      <div id="formacao" class="container-lg px-4 text-center border border-danger ">
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
         </div>
       </div>
@@ -123,8 +162,21 @@
 
 
       <!-- ATUACAO -->
-      <div id="atuacao" class="container-lg px-4 text-center border border-danger margin-navbar">
+      <div id="atuacao" class="container-lg px-4 text-center border border-danger ">
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
+
+          <div class="col border border-warning align-self-center">
+
+          </div>
+
+          <div class="col border border-warning align-self-center">
+            
+          </div>
+
+          <div class="col border border-warning align-self-center">
+            
+          </div>
+
         </div>
       </div>
       <!--/ ATUACAO -->
@@ -132,7 +184,7 @@
 
 
       <!-- CONTATO -->
-      <div id="contato" class="container-lg px-4 text-center border border-danger margin-navbar">
+      <div id="contato" class="container-lg px-4 text-center border border-danger ">
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
         </div>
       </div>

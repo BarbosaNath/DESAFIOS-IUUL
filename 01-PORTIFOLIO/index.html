@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
     <!-- NAVBAR -->
@@ -19,16 +20,16 @@
         $("#navbar").load("navbar.html");
       });
     </script>
-    <div id="navbar" class="z-3" style="position: fixed; top: 0; width: 100%;"></div>
+    <div id="navbar" class="z-3"></div>
     <!--/ NAVBAR -->
 
 
 
     <!-- HOME PAGE -->
-    <div id="aboutme" class="d-flex p-3 flex-column border border-info"> <!-- main contend -->
+    <div class="d-flex px-3 flex-column border border-info""> <!-- main contend -->
 
       <!--/ SOBRE MIM -->
-      <div class="container-lg px-4 text-center border border-danger mb-3">
+      <div id="aboutme" class="container-lg px-4 text-center border border-danger margin-navbar">
 
 
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
@@ -49,8 +50,7 @@
             <div class="row">
               <div class="col text-center">
                 <p>
-                  Ola, eu sou <strong>Matheus Eduardo Barbosa de Sousa</strong>,
-                  tenho 20 anos e estou cursando
+                  Ola, tenho 20 anos e estou cursando
                   <strong>Sistemas de Informação</strong>. Sou autodidata e
                   aprendo rápido. Possuo conhecimento intermediário em
                   <strong>Python</strong> e básico em <strong>JavaScript</strong>,
@@ -105,7 +105,7 @@
 
 
       <!-- PORTIFÓLIO -->
-      <div id="portifolio" class="container-lg px-4 text-center border border-danger mb-3">
+      <div id="portifolio" class="container-lg px-4 text-center border border-danger margin-navbar">
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
         </div>
       </div>
@@ -114,7 +114,7 @@
 
 
       <!-- FORMACAO -->
-      <div id="formacao" class="container-lg px-4 text-center border border-danger mb-3">
+      <div id="formacao" class="container-lg px-4 text-center border border-danger margin-navbar">
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
         </div>
       </div>
@@ -123,7 +123,7 @@
 
 
       <!-- ATUACAO -->
-      <div id="atuacao" class="container-lg px-4 text-center border border-danger mb-3">
+      <div id="atuacao" class="container-lg px-4 text-center border border-danger margin-navbar">
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
         </div>
       </div>
@@ -132,7 +132,7 @@
 
 
       <!-- CONTATO -->
-      <div id="contato" class="container-lg px-4 text-center border border-danger mb-3">
+      <div id="contato" class="container-lg px-4 text-center border border-danger margin-navbar">
         <div class="row gx-2 align-items-center" style="height: 80vh; max-height: 100vw;">
         </div>
       </div>

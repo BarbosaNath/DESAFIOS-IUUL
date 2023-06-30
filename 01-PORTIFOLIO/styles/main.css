@@ -18,6 +18,7 @@
 
 #my-photo {
 	background: repeating-linear-gradient(-45deg, #000, #000 5%, #fff 5%, #fff 10%);
+	height: 75vmin;
 }
 
 

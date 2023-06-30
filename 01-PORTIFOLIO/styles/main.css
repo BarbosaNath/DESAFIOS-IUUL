@@ -1,35 +1,6 @@
-/* #navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
+/* * {
+	background-color: #0001;
 } */
-
-.margin-navbar {
-    padding-top: 7vh;
-}
-
-
-#main-screen {
-	position: relative;
-	height: 100%;
-	overflow: auto;
-}
-
-
-#my-photo {
-	background: repeating-linear-gradient(-45deg, #000, #000 5%, #fff 5%, #fff 10%);
-	height: 75vmin;
-}
-
-
-.huge-text {
-	/*font-family: 'Staatliches', cursive;*/
-	font-family: "Helvetica Neue", sans-serif;
-	font-stretch: ultra-condensed;
-	font-size: 9vmin;
-	line-height: 0.9em;
-	letter-spacing: -0.03em;
-}
 
 body {
 	background: repeating-linear-gradient(-45deg, #fafafa, #fafafa 5%, #fff 5%, #fff 10%);
@@ -44,4 +15,65 @@ body {
 	100% {
 		background-position: 1000px 0px;
 	}
+}
+
+
+#main-screen {
+	position: relative;
+	height: 100%;
+	overflow: auto;
+}
+
+.img-bg {
+	background: repeating-linear-gradient(-45deg, #000, #000 8%, #ffffff00 8%, #ffffff00 10%);
+
+}
+
+#my-photo {
+	-webkit-filter: drop-shadow(2px 2px 0 white)
+                drop-shadow(-2px 2px 0 white)
+                drop-shadow(2px -2px 0 white)
+                drop-shadow(-2px -2px 0 white);
+
+	filter: drop-shadow(2px 2px 0 white)
+			drop-shadow(-2px 2px 0 white)
+			drop-shadow(2px -2px 0 white)
+			drop-shadow(-2px -2px 0 white);
+}
+
+
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+
+.portifolio-cards {
+	max-width: 70vw;
+	height: 70vmin;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box-shadow {
+	/* box-shadow: -15px -15px 15px #fff7, 15px 15px 15px #0000000f; */
+	box-shadow: 0px 0px 15px #0000000f;
+}
+
+.h75 {
+	height: 75vmin;
+}
+
+.mw540 {
+	max-width: 540px;
+}
+
+.huge-text {
+	/*font-family: 'Staatliches', cursive;*/
+	font-family: "Helvetica Neue", sans-serif;
+	font-stretch: ultra-condensed;
+	font-size: 9vmin;
+	line-height: 0.9em;
+	letter-spacing: -0.03em;
 }

@@ -16,6 +16,20 @@
 }
 
 
+#my-photo {
+	background: repeating-linear-gradient(-45deg, #000, #000 5%, #fff 5%, #fff 10%);
+}
+
+
+.huge-text {
+	/*font-family: 'Staatliches', cursive;*/
+	font-family: "Helvetica Neue", sans-serif;
+	font-stretch: ultra-condensed;
+	font-size: 9vmin;
+	line-height: 0.9em;
+	letter-spacing: -0.03em;
+}
+
 body {
 	background: repeating-linear-gradient(-45deg, #fafafa, #fafafa 5%, #fff 5%, #fff 10%);
 	background-size: 1000px 1000px;

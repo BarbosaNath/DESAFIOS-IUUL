@@ -55,6 +55,17 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
+.carousel-item .card{
+	height: 100%;
+}
+.col-md-4 .carousel-card-image {
+	height: 100%;
+	object-fit: cover;
+}
+
+.portifolio-cards .row{
+	height: 60vmin;
+}
 
 .box-shadow {
 	/* box-shadow: -15px -15px 15px #fff7, 15px 15px 15px #0000000f; */
@@ -73,7 +84,7 @@ body {
 	/*font-family: 'Staatliches', cursive;*/
 	font-family: "Helvetica Neue", sans-serif;
 	font-stretch: ultra-condensed;
-	font-size: 9vmin;
+	font-size: 8.9vmin;
 	line-height: 0.9em;
 	letter-spacing: -0.03em;
 }

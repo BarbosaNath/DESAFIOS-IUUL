@@ -77,3 +77,9 @@ body {
 	line-height: 0.9em;
 	letter-spacing: -0.03em;
 }
+
+
+.square-btn {
+	font-size: 3vmax;
+	color: #000;
+}

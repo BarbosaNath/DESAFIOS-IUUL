@@ -18,15 +18,6 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <!-- <script type="text/javascript">
-      $(function () {
-        $("#navbar-loader").load("navbar.html");
-      });
-    </script>
-    <div id="navbar-loader" class="z-3"></div> -->
-    <!--/ NAVBAR -->
-
     <nav
       id="navbar"
       class="navbar sticky-top navbar-expand-lg bg-body-tertiary z-3"
@@ -85,12 +76,9 @@
     >
       <div>
         <!--/ SOBRE MIM -->
-        <div
-          id="aboutme"
-          class="container-lg px-4 text-center border border-danger"
-        >
-          <div class="row g-2 align-items-center" style="min-height: 75vmin">
-            <div class="col border border-warning h75">
+        <div id="aboutme" class="container-lg px-4 text-center border-danger">
+          <div class="row g-2 align-items-center">
+            <div class="col border-warning h75">
               <div class="img-bg h75" style="margin: auto; max-width: 50vmin">
                 <img
                   id="my-photo"
@@ -101,7 +89,7 @@
               </div>
             </div>
 
-            <div class="col container border border-warning">
+            <div class="col container border-warning">
               <div class="row row-cols-1">
                 <div class="col text-center align-self-start">
                   <h1 class="fw-bold huge-text">
@@ -165,15 +153,13 @@
         <!-- PORTIFÓLIO -->
         <div
           id="portifolio"
-          class="container-lg px-4 text-center border border-danger"
+          class="container-lg px-4 text-center border-danger"
         >
-          <div
-            class="row gx-2 align-items-center"
-          >
-            <div id="carouselExample" class="carousel slide">
+          <div class="row gx-2 align-items-center">
+            <div id="carousel-projetos" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active p-5">
-                  <div class="card portifolio-cards box-shadow">
+                  <div class="card portifolio-cards shadow">
                     <div class="row">
                       <div class="col-md-4">
                         <img
@@ -189,13 +175,12 @@
                             Uma demo de um jogo feito para o curso de game
                             development da <strong>DANKI.CODE</strong>. Foi
                             desenvolvido em java utilisando a biblioteca
-                            <strong class="bgborder border-info"
+                            <strong class="bg border-info"
                               >TODO: ADICIONAR BIBIOTECA AQUI</strong
                             >
                           </p>
                           <p class="card-text">
-                            <small
-                              class="text-body-secondary bgborder border-warning"
+                            <small class="text-body-secondary bg border-warning"
                               >ferramentas utilizadas</small
                             >
                           </p>
@@ -206,7 +191,7 @@
                 </div>
 
                 <div class="carousel-item p-5">
-                  <div class="card portifolio-cards box-shadow">
+                  <div class="card portifolio-cards shadow">
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img
@@ -234,7 +219,7 @@
                 </div>
 
                 <div class="carousel-item p-5">
-                  <div class="card portifolio-cards box-shadow">
+                  <div class="card portifolio-cards shadow">
                     <div class="row g-0">
                       <div class="col-md-4">
                         <img
@@ -267,7 +252,7 @@
               <button
                 class="carousel-control-prev"
                 type="button"
-                data-bs-target="#carouselExample"
+                data-bs-target="#carousel-projetos"
                 data-bs-slide="prev"
               >
                 <span
@@ -279,7 +264,7 @@
               <button
                 class="carousel-control-next"
                 type="button"
-                data-bs-target="#carouselExample"
+                data-bs-target="#carousel-projetos"
                 data-bs-slide="next"
               >
                 <span
@@ -294,44 +279,230 @@
         <!--/ PORTIFÓLIO -->
 
         <!-- FORMACAO -->
-        <div
-          id="formacao"
-          class="container-lg px-4 text-center border border-danger"
-        >
-          <div
-            class="row gx-2 align-items-center"
-            style="height: 80vh; max-height: 100vw"
-          ></div>
+        <div id="formacao" class="container-lg px-4 text-center border-danger">
+          <div class="row align-items-center section-wrapper"></div>
         </div>
         <!--/ FORMACAO -->
 
         <!-- ATUACAO -->
-        <div
-          id="atuacao"
-          class="container-lg px-4 text-center border border-danger"
-        >
-          <div
-            class="row gx-2 align-items-center"
-            style="height: 80vh; max-height: 100vw"
-          >
-            <div class="col border border-warning align-self-center">
-              Trabalho em equipe. Kanban. Digitalização de documentos no
-              Microsoft Word. Impressão de documentos. Produção de publicações
-              para Instagram da empresa.
+        <div id="atuacao" class="container-lg px-4 text-center border-danger">
+          <!-- DESKTOP VERSION -->
+          <div class="desktop-only">
+            <div class="d-flex justify-content-around section-wrapper">
+              <div class="border-warning align-self-center">
+                <div class="card atuacao-card shadow">
+                  <div class="card-header">
+                    <img
+                      id="cpp-img"
+                      src="images/pequeno_principe.png"
+                      class="card-img-top atuacao-card-img"
+                      alt="..."
+                    />
+                    <p class="card-title">Colégio Pequeno Príncipe</p>
+                    <p class="card-subtitle small text-body-secondary">
+                      07/2022 até 06/2023
+                    </p>
+                    <p class="card-subtitle small text-body-secondary">
+                      Jovem Aprendiz
+                    </p>
+                  </div>
+                  <div class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <strong>Jovem Aprendiz</strong> através do programa
+                      Primeiro Passo exercendo a função de
+                      <strong>Auxiliar Administrativo</strong> na
+                      <strong>gáfica</strong> do
+                      <strong>Colégio Pequeno Príncipe</strong>.
+                    </li>
+
+                    <p class="card-text fw-semibold text-body-secondary">
+                      Atividades exercidas nesta experiencia:
+                    </p>
+
+                    <ul class="list-inline small">
+                      <li class="list-inline-item card-text">
+                        Trabalho em equipe
+                      </li>
+                      <li class="list-inline-item card-text">Kanban</li>
+                      <li class="list-inline-item card-text">
+                        Microsoft Office
+                      </li>
+                      <li class="list-inline-item card-text">
+                        Produção de publicações para as redes sociais da empresa
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border-warning align-self-center">
+                <div class="card atuacao-card shadow">
+                  <img
+                    src="images/wos.jpeg"
+                    class="card-img-top atuacao-card-img"
+                    alt="..."
+                  />
+                  <div class="card-header">
+                    <p class="card-title">Jogo World of Science</p>
+                    <p class="card-subtitle small text-body-secondary">
+                      04/2022 até 06/2022
+                    </p>
+                    <p class="card-subtitle small text-body-secondary">
+                      Freelancer
+                    </p>
+                  </div>
+                  <div class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <strong>Freelancer</strong> voluntário para o laboratório
+                      <strong>LITE</strong> do Instituto Federal do Ceará Campus
+                      Crato exercendo a função de
+                      <strong>Audio Designer</strong>.
+                    </li>
+
+                    <p class="card-text fw-semibold text-body-secondary">
+                      Atividades exercidas nesta experiencia:
+                    </p>
+
+                    <ul class="list-inline small">
+                      <li class="list-inline-item card-text">
+                        Trabalho em equipe
+                      </li>
+                      <li class="list-inline-item card-text">Kanban</li>
+                      <li class="list-inline-item card-text">
+                        Produção musical no LMMS
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            <div class="col border border-warning align-self-center"></div>
-
-            <div class="col border border-warning align-self-center"></div>
           </div>
+          <!--/ DESKTOP VERSION -->
+
+          <!-- MOBILE VERSION -->
+          <div class="mobile-only">
+            <div id="carousel-atuacao-mobile" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active p-5">
+                  <div class="card atuacao-card-mobile shadow">
+                    <div class="card-header">
+                      <img
+                        id="cpp-img"
+                        src="images/pequeno_principe.png"
+                        class="card-img-top atuacao-card-img"
+                        alt="..."
+                      />
+                      <p class="card-title">Colégio Pequeno Príncipe</p>
+                      <p class="card-subtitle small text-body-secondary">
+                        07/2022 até 06/2023
+                      </p>
+                      <p class="card-subtitle small text-body-secondary">
+                        Jovem Aprendiz
+                      </p>
+                    </div>
+                    <div class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <strong>Jovem Aprendiz</strong> através do programa
+                        Primeiro Passo exercendo a função de
+                        <strong>Auxiliar Administrativo</strong> na
+                        <strong>gáfica</strong> do
+                        <strong>Colégio Pequeno Príncipe</strong>.
+                      </li>
+
+                      <p class="card-text fw-semibold text-body-secondary">
+                        Atividades exercidas nesta experiencia:
+                      </p>
+
+                      <ul class="list-inline small">
+                        <li class="list-inline-item card-text">
+                          Trabalho em equipe
+                        </li>
+                        <li class="list-inline-item card-text">Kanban</li>
+                        <li class="list-inline-item card-text">
+                          Microsoft Office
+                        </li>
+                        <li class="list-inline-item card-text">
+                          Produção de publicações para as redes sociais da
+                          empresa
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item p-5">
+                  <div class="card atuacao-card-mobile shadow">
+                    <img
+                      src="images/wos.jpeg"
+                      class="card-img-top atuacao-card-img"
+                      alt="..."
+                    />
+                    <div class="card-header">
+                      <p class="card-title">Jogo World of Science</p>
+                      <p class="card-subtitle small text-body-secondary">
+                        04/2022 até 06/2022
+                      </p>
+                      <p class="card-subtitle small text-body-secondary">
+                        Freelancer
+                      </p>
+                    </div>
+                    <div class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <strong>Freelancer</strong> voluntário para o
+                        laboratório <strong>LITE</strong> do Instituto Federal
+                        do Ceará Campus Crato exercendo a função de
+                        <strong>Audio Designer</strong>.
+                      </li>
+
+                      <p class="card-text fw-semibold text-body-secondary">
+                        Atividades exercidas nesta experiencia:
+                      </p>
+
+                      <ul class="list-inline small">
+                        <li class="list-inline-item card-text">
+                          Trabalho em equipe
+                        </li>
+                        <li class="list-inline-item card-text">Kanban</li>
+                        <li class="list-inline-item card-text">
+                          Produção musical no LMMS
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carousel-atuacao-mobile"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carousel-atuacao-mobile"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <!--/ MOBILE VERSION -->
         </div>
         <!--/ ATUACAO -->
 
         <!-- CONTATO -->
-        <div
-          id="contato"
-          class="container-lg px-4 text-center border border-danger"
-        >
+        <div id="contato" class="container-lg px-4 text-center border-danger">
           <div
             class="row gx-2 align-items-center"
             style="height: 80vh; max-height: 100vw"

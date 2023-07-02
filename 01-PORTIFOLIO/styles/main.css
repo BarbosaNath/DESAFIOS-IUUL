@@ -24,6 +24,11 @@ body {
 	overflow: auto;
 }
 
+.section-wrapper{
+	height: 80vh;
+}
+
+
 .img-bg {
 	background: repeating-linear-gradient(-45deg, #000, #000 8%, #ffffff00 8%, #ffffff00 10%);
 
@@ -55,7 +60,8 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 }
-.carousel-item .card{
+
+.portifolio-cards{
 	height: 100%;
 	width: 90%;
 }
@@ -68,22 +74,68 @@ body {
 	.carousel-card-image {
 		border-radius: .375rem .375rem 0 0;
 	}
+
 	.col-md-4 .carousel-card-image {
 		width: 100%;
 		height: 40vmin;
 	}
+
+	.portifolio-cards .row{
+		height: 80vw;
+	}
 }
+
 @media only screen and (min-width: 768px){
 	.carousel-card-image {
 		border-radius: .375rem 0 0 .375rem;
 	}
+
 	.col-md-4 .carousel-card-image {
 		height: 100%;
 	}
+
+	.portifolio-cards .row{
+		height: 60vmin;
+	}
 }
 
-.portifolio-cards .row{
-	height: 60vmin;
+
+
+.atuacao-card {
+	width: 35vmax;
+	height: 75vmin;
+}
+
+.atuacao-card-img {
+	width: 100%;
+	height: 30vmin;
+	object-fit: cover;
+}
+
+.atuacao-card-mobile {
+	margin: auto;
+	height: 65vmax;
+
+	width: 70vmin;
+}
+
+#cpp-img {
+	object-fit: contain;
+}
+
+
+
+@media only screen and (min-width: 768px){
+	.mobile-only{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 768px){
+	.desktop-only{
+		display: none;
+	}
 }
 
 .box-shadow {

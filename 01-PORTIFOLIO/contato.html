@@ -31,6 +31,7 @@
       $("#nav-contato").addClass("active");
     </script>
 
+
     <!-- HOME PAGE -->
     <div
       id="main-screen"
@@ -38,21 +39,21 @@
       data-bs-target="#navbar"
       data-bs-root-margin="0px 0px -40%"
       data-bs-smooth-scroll="true"
-      class="scrollspy-example p-3 rounded-2"
+      class="scrollspy-example rounded-2"
       tabindex="0"
     >
       <div>
         <!-- CONTATO -->
         <div
           id="contato"
-          class="container-lg px-4 text-center"
+          class="container-lg px-4 my-5 text-center"
         >
           <div class="row gx-2 align-items-center">
             <div class="card shadow">
               <div class="card-header" style="background-color: white">
                 <h5 class="card-title">Contato</h5>
               </div>
-              <div class="d-lg-flex">
+              <div class="d-md-flex">
                 <div class="p-2">
                   <div class="vstack gap-3 desktop-only">
                     <div class="hstack gap-3 desktop-only">
@@ -236,6 +237,17 @@
           </div>
         </div>
         <!--/ CONTATO -->
+
+
+        <!-- FOOTER -->
+        <script type="text/javascript">
+          $(function () {
+            $("#contato-footer").load("footer.html");
+          });
+        </script>
+        <div id="contato-footer"></div>
+        <!--/ FOOTER -->
+
       </div>
     </div>
     <!--/ HOME PAGE -->

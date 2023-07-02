@@ -1,6 +1,14 @@
-/* * {
-	background-color: #0001;
-} */
+* {
+	/* background-color: #0001; */
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+
+}
+
+html{
+	height: 100%;
+}
 
 body {
 	background: repeating-linear-gradient(-45deg, #fafafa, #fafafa 5%, #fff 5%, #fff 10%);
@@ -164,4 +172,62 @@ body {
 .square-btn {
 	font-size: 3vmax;
 	color: #000;
+}
+
+.footer-btn {
+	font-size: 2em;
+	color: #fff;
+}
+
+
+.footer-overwrapper {
+	width: 100vw;
+	height: 20vh;
+	margin: auto;
+
+
+}
+.footer-wrapper {
+	width: 100vw;
+	height: 20vh;
+	margin: auto;
+
+	background: linear-gradient(0deg, #111a,#1117);
+	bottom: 0;
+
+}
+
+
+.footer-bottom {
+	width: 100vw;
+	height: 5vh;
+	margin: auto;
+}
+
+.footer-menu {
+	padding: 0px;
+	text-align: center;
+}
+
+.footer-menu div a {
+	color: white;
+}
+
+
+#contato-footer{
+	position: relative; 
+	bottom: 0;
+}
+@media only screen and (min-height: 800px) {
+	#contato-footer{
+		position: fixed; 
+		bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 960px) and (min-height: 600px) {
+	#contato-footer{
+		position: fixed; 
+		bottom: 0;
+	}
 }

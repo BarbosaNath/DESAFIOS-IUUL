@@ -71,12 +71,15 @@
       data-bs-target="#navbar"
       data-bs-root-margin="0px 0px -40%"
       data-bs-smooth-scroll="true"
-      class="scrollspy-example p-3 rounded-2"
+      class="scrollspy-example rounded-2"
       tabindex="0"
     >
       <div>
         <!--/ SOBRE MIM -->
-        <div id="aboutme" class="container-lg px-4 text-center border-danger">
+        <div
+          id="aboutme"
+          class="container-lg px-4 my-lg-5 mb-md-5 text-center border-danger"
+        >
           <div class="row g-2 align-items-center">
             <div class="col border-warning h75">
               <div class="img-bg h75" style="margin: auto; max-width: 50vmin">
@@ -279,7 +282,10 @@
         <!--/ PORTIFÓLIO -->
 
         <!-- FORMACAO -->
-        <div id="formacao" class="container-lg g-4 text-center border-danger">
+        <div
+          id="formacao"
+          class="container-lg g-4 my-5 text-center border-danger"
+        >
           <div
             class="container align-items-center justify-content-around section-wrapper"
           >
@@ -460,7 +466,10 @@
         <!--/ FORMACAO -->
 
         <!-- ATUACAO -->
-        <div id="atuacao" class="container-lg px-4 text-center border-danger">
+        <div
+          id="atuacao"
+          class="container-lg px-4 my-5 text-center border-danger"
+        >
           <!-- DESKTOP VERSION -->
           <div class="desktop-only">
             <div class="d-flex justify-content-around section-wrapper">
@@ -675,6 +684,17 @@
           <!--/ MOBILE VERSION -->
         </div>
         <!--/ ATUACAO -->
+
+
+        <!-- FOOTER -->
+        <script type="text/javascript">
+          $(function () {
+            $("#footer").load("footer.html");
+          });
+        </script>
+        <div id="footer"></div>
+        <!--/ FOOTER -->
+        
       </div>
     </div>
     <!--/ HOME PAGE -->

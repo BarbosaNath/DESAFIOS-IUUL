@@ -71,7 +71,7 @@
       data-bs-target="#navbar"
       data-bs-root-margin="0px 0px -40%"
       data-bs-smooth-scroll="true"
-      class="scrollspy-example rounded-2"
+      class="scrollspy-example"
       tabindex="0"
     >
       <div>
@@ -95,7 +95,11 @@
             <div class="col container border-warning">
               <div class="row row-cols-1">
                 <div class="col text-center align-self-start">
-                  <h1 class="fw-bold huge-text">
+                  <h1 class="display-4 huge-text desktop-only">
+                    MATHEUS EDUARDO <br />
+                    BARBOSA DE SOUSA
+                  </h1>
+                  <h1 class="display-2 huge-text mobile-only">
                     MATHEUS EDUARDO <br />
                     BARBOSA DE SOUSA
                   </h1>
@@ -153,8 +157,20 @@
         </div>
         <!--/ SOBRE MIM -->
 
+        <div class="text-center">
+            <i
+              id="homepage-separator"
+              class="fs-3 bi bi-caret-down-fill desktop-only"
+            ></i>
+        </div>
+
         <!-- PORTIFÓLIO -->
-        <div id="portifolio" class="container-lg text-center border-danger">
+        <div
+          id="portifolio"
+          class="container-lg my-5 text-center border-danger"
+        >
+          <p class="fw-bold display-5 text-uppercase">meus projetos</p>
+
           <div class="row align-items-center">
             <div id="carousel-projetos" class="carousel slide">
               <div class="carousel-inner">
@@ -275,8 +291,12 @@
         <!--/ PORTIFÓLIO -->
 
         <!-- FORMACAO -->
-        <div id="formacao" class="container-lg my-5 border-danger">
-          <div id="formacao-cards-wrapper" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+        <div id="formacao" class="container-lg my-5 border-danger text-center">
+          <p class="fw-bold display-5 text-uppercase">formação acadêmica</p>
+          <div
+            id="formacao-cards-wrapper"
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3"
+          >
             <div class="col my-2">
               <div class="card text-center shadow">
                 <div class="card-header">
@@ -442,6 +462,7 @@
           id="atuacao"
           class="container-lg px-lg-4 my-5 text-center border-danger"
         >
+          <p class="fw-bold display-5 text-uppercase">Atuação Profissional</p>
           <!-- DESKTOP VERSION -->
           <div class="desktop-only">
             <div class="d-flex justify-content-around section-wrapper">

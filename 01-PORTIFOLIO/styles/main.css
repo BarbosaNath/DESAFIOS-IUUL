@@ -19,6 +19,7 @@ body {
   );
   background-size: 1000px 1000px;
   animation: gradient 20s linear infinite;
+  overflow: hidden; /* Hide scrollbars */
 }
 
 @keyframes gradient {
@@ -35,6 +36,25 @@ body {
   height: 100%;
   overflow: auto;
 }
+
+
+#homepage-separator{
+  animation: blinky 2s ease-in infinite;
+}
+
+@keyframes blinky {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: 1;
+  }
+}
+
+
 
 .section-wrapper {
   height: 80vh;
@@ -152,11 +172,15 @@ body {
   max-width: 540px;
 }
 
+.helvetica {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
 .huge-text {
   /*font-family: 'Staatliches', cursive;*/
-  font-family: "Helvetica Neue", sans-serif;
   font-stretch: ultra-condensed;
-  font-size: 8.9vmin;
+  font-weight: 700;
+  /* font-size: 8.7vmin; */
   line-height: 0.9em;
   letter-spacing: -0.03em;
 }
@@ -173,12 +197,12 @@ body {
 
 .footer-overwrapper {
   width: 100vw;
-  height: 20vh;
+  height: 18vh;
   margin: auto;
 }
 .footer-wrapper {
   width: 100vw;
-  height: 20vh;
+  height: 18vh;
   margin: auto;
 
   background: linear-gradient(0deg, #111a, #1117);

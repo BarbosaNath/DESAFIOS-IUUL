@@ -1439,13 +1439,14 @@
                 <div class="p-2">
                   <div class="card-body">
                     <div class="container">
-                      <div class="row gy-3">
+                      <form class="row gy-3">
                         <div class="col-lg-6">
                           <input
                             class="form-control"
                             type="text"
                             placeholder="Nome"
-                            aria-label="Nome"
+                            id="contato-nome"
+                            required
                           />
                         </div>
 
@@ -1454,26 +1455,28 @@
                             class="form-control"
                             type="text"
                             placeholder="Sobrenome"
-                            aria-label="Sobrenome"
+                            id="contato-sobrenome"
+                            required
                           />
                         </div>
 
                         <div class="col-lg-6">
                           <input
                             class="form-control"
-                            type="text"
+                            type="tel"
                             placeholder="Telefone"
-                            aria-label="Telefone"
+                            id="contato-telefone"
                           />
                         </div>
 
                         <div class="col-lg-6">
                           <input
                             class="form-control"
-                            type="text"
+                            type="email"
                             placeholder="Email"
-                            aria-label="Email"
-                          />
+                            id="contato-email"
+                            required
+                          >
                         </div>
 
                         <div class="col-12" rows="3">
@@ -1481,16 +1484,17 @@
                             class="form-control"
                             rows="3"
                             placeholder="Mensagem"
-                            aria-label="Mensagem"
+                            id="contato-mensage"
+                            required
                           ></textarea>
                         </div>
 
                         <div class="col">
-                          <button type="button" class="btn btn-primary">
-                            Enviar
-                          </button>
+                          <input type="button" class="btn btn-secondary" value="Ver Todas as Mensagens">
+                          <input type="reset" class="btn btn-secondary">
+                          <input type="submit" class="btn btn-primary" value="Enviar Mensagem">
                         </div>
-                      </div>
+                      </form>
                     </div>
                   </div>
                 </div>

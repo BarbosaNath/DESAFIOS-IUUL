@@ -15,6 +15,16 @@ function makeMessageCard(objetoMensagem) {
 `;
 }
 
+function clearMessages() {
+  var shouldClear = confirm("Você tem certeza?");
+
+  if (shouldClear) {
+    localStorage.removeItem("mensagens");
+    location.reload();
+    return false;
+  }
+}
+
 var mensagens = JSON.parse(localStorage.getItem("mensagens"));
 
 var mainDiv = document.querySelector("#main-section");

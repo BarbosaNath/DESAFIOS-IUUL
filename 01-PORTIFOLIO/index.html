@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="styles/main.css" />
 
     <!-- import favcon -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
   <body>
     <!---------------------- NAVBAR ---------------------->
@@ -1439,15 +1439,23 @@
                 <div class="p-2">
                   <div class="card-body">
                     <div class="container">
-                      <form class="row gy-3">
+                      <form
+                        id="contato-formulario"
+                        class="row gy-3 needs-validation"
+                        novalidate
+                      >
                         <div class="col-lg-6">
                           <input
                             class="form-control"
                             type="text"
                             placeholder="Nome"
                             id="contato-nome"
+                            autocomplete="given-name"
                             required
                           />
+                          <div class="invalid-feedback">
+                            Por favor, digite seu nome!
+                          </div>
                         </div>
 
                         <div class="col-lg-6">
@@ -1456,8 +1464,12 @@
                             type="text"
                             placeholder="Sobrenome"
                             id="contato-sobrenome"
+                            autocomplete="family-name"
                             required
                           />
+                          <div class="invalid-feedback">
+                            Por favor, digite seu sobrenome!
+                          </div>
                         </div>
 
                         <div class="col-lg-6">
@@ -1466,7 +1478,12 @@
                             type="tel"
                             placeholder="Telefone"
                             id="contato-telefone"
+                            autocomplete="tel"
+                            required
                           />
+                          <div class="invalid-feedback">
+                            Por favor, digite seu telefone!
+                          </div>
                         </div>
 
                         <div class="col-lg-6">
@@ -1475,8 +1492,12 @@
                             type="email"
                             placeholder="Email"
                             id="contato-email"
+                            autocomplete="email"
                             required
-                          >
+                          />
+                          <div class="invalid-feedback">
+                            Por favor, digite um email válido!
+                          </div>
                         </div>
 
                         <div class="col-12" rows="3">
@@ -1484,15 +1505,26 @@
                             class="form-control"
                             rows="3"
                             placeholder="Mensagem"
-                            id="contato-mensage"
+                            id="contato-mensagem"
                             required
                           ></textarea>
+                          <div class="invalid-feedback">
+                            Por favor, digite uma mensagem!
+                          </div>
                         </div>
 
                         <div class="col">
-                          <input type="button" class="btn btn-secondary" value="Ver Todas as Mensagens">
-                          <input type="reset" class="btn btn-secondary">
-                          <input type="submit" class="btn btn-primary" value="Enviar Mensagem">
+                          <input
+                            type="button"
+                            class="btn btn-secondary"
+                            value="Ver Todas as Mensagens"
+                          />
+                          <input type="reset" class="btn btn-secondary" />
+                          <input
+                            type="submit"
+                            class="btn btn-primary"
+                            value="Enviar Mensagem"
+                          />
                         </div>
                       </form>
                     </div>
@@ -1515,5 +1547,7 @@
       </div>
     </div>
     <!----------------------/ HOMEPAGE ---------------------->
+
+    <script src="scripts/contato.js"></script>
   </body>
 </html>

@@ -16,7 +16,12 @@ form.addEventListener("submit", (e) => {
       email: formEmail.value,
       mensagem: formMensagem.value,
     };
-    console.log(respostaForm);
+
+    let mensagensJSON = localStorage.getItem("mensagens");
+    var mensagens = mensagensJSON !== null ? JSON.parse(mensagensJSON) : [];
+    mensagens.push(respostaForm);
+
+    localStorage.setItem("mensagens", JSON.stringify(mensagens));
   }
 
   form.classList.add("was-validated");

@@ -1,4 +1,4 @@
-function makeMessageCard (objetoMensagem) {
+function makeMessageCard(objetoMensagem) {
   return `<div class="card m-2 text-center">
   <h5 class="card-header">
     Mensagem de ${objetoMensagem.nome} ${objetoMensagem.sobrenome}
@@ -15,15 +15,11 @@ function makeMessageCard (objetoMensagem) {
 `;
 }
 
-
-
 var mensagens = JSON.parse(localStorage.getItem("mensagens"));
 
 var mainDiv = document.querySelector("#main-section");
 
-
-mensagens.forEach(mensagem => {
-
+mensagens.forEach((mensagem) => {
   let card = document.createElement("div");
   card.classList = "col";
 

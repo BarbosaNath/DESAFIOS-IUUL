@@ -32,7 +32,7 @@
     <!-- import favcon -->
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
   </head>
-  <body>
+  <body style="display: flex; flex-direction: column; min-height: 100vh">
     <div id="navbar"></div>
     <script type="text/javascript">
       $("#navbar").load("/navbar.html");
@@ -41,7 +41,7 @@
     <div
       id="main-container"
       class="container align-items-center text-center"
-      style="width: 80vw; margin: auto; padding: 15vmin 0vh"
+      style="flex: 1 0 auto; width: 80vw; margin: auto; padding: 15vmin 0vh"
     >
       <button
         id="row btn-limpar-mensagens"
@@ -57,7 +57,7 @@
       ></div>
     </div>
 
-    <div id="footer"></div>
+    <footer id="footer"></footer>
     <script type="text/javascript">
       $("#footer").load("/footer.html");
     </script>

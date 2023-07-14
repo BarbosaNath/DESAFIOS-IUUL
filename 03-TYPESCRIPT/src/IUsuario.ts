@@ -1,3 +1,3 @@
-export interface IUsuario {
+export default interface IUsuario {
   autenticar(): boolean
 }

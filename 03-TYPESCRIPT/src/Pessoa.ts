@@ -1,4 +1,4 @@
-export abstract class Pessoa {
+export default abstract class Pessoa {
   private readonly _cpf;
   private _nome;
   private _telefone;

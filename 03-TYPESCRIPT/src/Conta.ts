@@ -8,3 +8,16 @@ export default abstract class Conta{
 
   public get numero () : string { return this._numero; }
 }
+
+class Credito {
+  constructor(private _valor: number) {}
+  public get valor() : number  { return this._valor; }
+  public set valor(v : number) { this._valor = v; }
+
+}
+
+class Debito {
+  constructor(private _valor: number) {}
+  public get valor() : number  { return this._valor; }
+  public set valor(v : number) { this._valor = v; }
+}

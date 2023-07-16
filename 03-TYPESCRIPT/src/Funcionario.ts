@@ -21,20 +21,10 @@ export default class Funcionario extends Pessoa implements IUsuario {
     this._cargos.push(new Cargo(cargo));
   }
 
-  public removerCargo(cargo: string): void {
-    var index: number = -1;
-
-    for (let i = 0; i < this._cargos.length; i++) {
-      if (cargo.toUpperCase() === this._cargos[i].nome.toUpperCase()) {
-        index = i;
-        break;
-      }
-    }
-
-    if (index > -1) {
-      this._cargos.splice(index, 1);
-    }
+  public removerCargo(cargoIndex: number): void {
+    this._cargos.splice(cargoIndex, 1);
   }
+
 
   public mostrarCargos() {
     for (let cargo of this._cargos) {

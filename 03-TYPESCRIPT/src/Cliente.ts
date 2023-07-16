@@ -15,14 +15,22 @@ export default class Cliente extends Pessoa implements IUsuario {
     super(_cpf, _nome, _telefone)
   }
 
-  listarEnderecos(): void {
+  public listarEnderecos(): void {
     for (let endereco of this._enderecos) {
       console.log(endereco);
     }
   }
 
-  autenticar(): boolean {
+  public autenticar(): boolean {
     return true;
+  }
+
+  public adicionarEndereco(endereco:Endereco): void{
+    this._enderecos.push(endereco);
+  }
+
+  public removerEndereco(enderecoIndex:number): void{
+    this._enderecos.splice(enderecoIndex, 1)
   }
 
   public get enderecos() : Endereco[] { return this._enderecos }

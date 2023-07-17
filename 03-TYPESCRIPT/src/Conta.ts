@@ -1,30 +1,20 @@
 export default abstract class Conta {
-  private _saldo: number;
-
+  // Segundo o UML, apenas a ContaCorrente tem Limite
   constructor(
     private readonly _numero: string,
-    private _limite: number,
     private _creditos: Credito[] = [],
     private _debitos: Debito[] = [],
-  ) {
-    this._saldo = 0;
-  }
+  ) { }
 
   public depositar(valor: number): void {
-    this._saldo += valor;
     this._creditos.push(new Credito(valor))
   }
 
   public sacar(valor: number): void {
-    this._saldo -= valor;
     this._debitos.push(new Debito(valor))
   }
 
   public get numero(): string { return this._numero; }
-  public get saldo () : number { return this._saldo; }
-
-  public get limite(): number { return this._limite; }
-  public set limite(v: number) { this._limite = v; }
 
 }
 

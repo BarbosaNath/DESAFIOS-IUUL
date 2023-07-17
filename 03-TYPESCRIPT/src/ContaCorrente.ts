@@ -1,17 +1,17 @@
-import {Conta, Debito} from "./Conta";
+import Conta from "./Conta";
 
-export default abstract class ContaCorrente extends Conta {
+export default class ContaCorrente extends Conta {
   constructor(
     numero: string,
     private _limite: number
   ) {
-    super(numero)
+    super(numero);
   }
 
   public sacar(valor: number): void {
-    if (this.calcularSaldo() - valor >= 0){
-      this.debitos.push(new Debito(valor))
-    }
+    if (this.calcularSaldo() - valor < 0) return;
+
+    super.sacar(valor)
   }
 
   public calcularSaldo(): number {
@@ -29,7 +29,13 @@ export default abstract class ContaCorrente extends Conta {
     return saldo;
   }
 
-  public get saldo(): number {return this.calcularSaldo()}
+  public transferir(conta: Conta, valor: number): void {
+    if (this.calcularSaldo() - valor < 0) return
+
+    this.sacar(valor);
+    conta.depositar(valor);
+  }
+
   public get limite(): number { return this._limite; }
   public set limite(v: number) { this._limite = v; }
 }

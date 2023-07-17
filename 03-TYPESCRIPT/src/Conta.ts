@@ -1,4 +1,4 @@
-export abstract class Conta {
+export default abstract class Conta {
   // Segundo o UML, apenas a ContaCorrente tem Limite
   constructor(
     private readonly _numero: string,

@@ -1,4 +1,4 @@
-export default abstract class Conta {
+export abstract class Conta {
   // Segundo o UML, apenas a ContaCorrente tem Limite
   constructor(
     private readonly _numero: string,
@@ -15,13 +15,15 @@ export default abstract class Conta {
   }
 
   public get numero(): string { return this._numero; }
+  public get creditos(): Credito[] { return this._creditos; }
+  public get debitos(): Debito[] { return this._debitos; }
 
 }
 
 
 // Classes auxiliares para transferência bancária
 
-class Credito {
+export class Credito {
   private readonly _data: Date;
 
   constructor(
@@ -35,7 +37,7 @@ class Credito {
 
 }
 
-class Debito {
+export class Debito {
   private readonly _data: Date;
 
   constructor(

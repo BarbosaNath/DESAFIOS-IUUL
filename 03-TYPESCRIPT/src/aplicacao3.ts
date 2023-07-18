@@ -13,4 +13,4 @@ for (let i = 0; i < 3; i++) cliente.contas[0].depositar(100);
 
 cliente.contas[0].sacar(50);
 
-console.log((cliente.contas[0] as ContaCorrente).calcularSaldo());
+console.log("O saldo da conta é igual a: R$ " + (cliente.contas[0] as ContaCorrente).calcularSaldo());

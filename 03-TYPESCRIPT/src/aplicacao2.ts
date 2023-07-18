@@ -1,7 +1,7 @@
 import Cliente from "./Cliente";
 import Endereco from "./Endereco";
 
-var cliente: Cliente = new Cliente(
+const cliente: Cliente = new Cliente(
   "123.123.123-12",
   "Claudio Júnior",
   "(88) 99999-9999"

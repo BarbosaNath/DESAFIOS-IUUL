@@ -3,7 +3,6 @@ import Conta from "./Conta";
 export default class ContaPoupanca extends Conta {
   constructor(
     numero: string,
-    private _limite: number
   ) {
     super(numero);
   }
@@ -20,7 +19,4 @@ export default class ContaPoupanca extends Conta {
 
     return saldo;
   }
-
-  public get limite(): number { return this._limite; }
-  public set limite(v: number) { this._limite = v; }
 }

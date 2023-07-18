@@ -12,7 +12,7 @@ export default class Cliente extends Pessoa implements IUsuario {
     private _enderecos: Endereco[] = [],
     private _contas: Conta[] = [],
   ) {
-    super(_cpf, _nome, _telefone)
+    super(_cpf, _nome, _telefone);
   }
 
   public listarEnderecos(): void {
@@ -25,14 +25,22 @@ export default class Cliente extends Pessoa implements IUsuario {
     return true;
   }
 
-  public adicionarEndereco(endereco:Endereco): void{
+  public adicionarEndereco(endereco: Endereco): void {
     this._enderecos.push(endereco);
   }
 
-  public removerEndereco(enderecoIndex:number): void{
-    this._enderecos.splice(enderecoIndex, 1)
+  public removerEndereco(enderecoIndex: number): void {
+    this._enderecos.splice(enderecoIndex, 1);
   }
 
-  public get enderecos() : Endereco[] { return this._enderecos }
-  public get contas() : Endereco[] { return this._enderecos }
+  public adicionarConta(conta: Conta): void {
+    this._contas.push(conta);
+  }
+
+  public removerConta(contaIndex: number): void {
+    this._contas.splice(contaIndex, 1);
+  }
+
+  public get enderecos(): Endereco[] { return this._enderecos; }
+  public get contas(): Conta[] { return this._contas; }
 }

@@ -9,7 +9,9 @@ export default class ContaCorrente extends Conta {
   }
 
   public sacar(valor: number): void {
-    if (this.calcularSaldo() - valor < 0) return;
+    if (this.calcularSaldo() - valor < 0) {
+      throw new Error("Conta com saldo insuficiente!");
+    }
 
     super.sacar(valor)
   }
@@ -30,7 +32,9 @@ export default class ContaCorrente extends Conta {
   }
 
   public transferir(conta: Conta, valor: number): void {
-    if (this.calcularSaldo() - valor < 0) return
+    if (this.calcularSaldo() - valor < 0) {
+      throw new Error("Conta com saldo insuficiente!");
+    }
 
     this.sacar(valor);
     conta.depositar(valor);

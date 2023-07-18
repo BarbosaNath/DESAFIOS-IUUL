@@ -24,5 +24,13 @@ contapoupanca.depositar(1000);
 
 contacorrente.transferir(contapoupanca, 500);
 
-console.log(`O saldo da conta corrente do cliente ${cliente1.nome} é igual a: R$ ${contacorrente.calcularSaldo()}`);
-console.log(`O saldo da conta poupanca do cliente ${cliente2.nome} é igual a: R$ ${contapoupanca.calcularSaldo()}`);
+console.log(
+  `O saldo da conta corrente do cliente ${
+    cliente1.nome
+  } é igual a: R$ ${contacorrente.calcularSaldo()}`,
+);
+console.log(
+  `O saldo da conta poupanca do cliente ${
+    cliente2.nome
+  } é igual a: R$ ${contapoupanca.calcularSaldo()}`,
+);

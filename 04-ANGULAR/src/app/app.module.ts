@@ -8,11 +8,14 @@ import { HomeComponent } from './views/home/home.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import { WelcomePageComponent } from './views/home/welcome-page/welcome-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +23,7 @@ import {MatButtonModule} from '@angular/material/button';
     BrowserAnimationsModule,
     MatIconModule,
     MatButtonModule,
+    MatCardModule,
     MatToolbarModule
   ],
   providers: [],

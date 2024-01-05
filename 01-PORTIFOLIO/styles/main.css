@@ -166,7 +166,7 @@ body {
 }
 
 .atuacao-card {
-  width: 35vmax;
+  width: 30vmax;
   height: 75vmin;
 }
 
@@ -197,6 +197,10 @@ body {
   .desktop-only {
     display: none;
   }
+}
+
+.overflow-auto {
+  overflow: auto;
 }
 
 .h75 {
